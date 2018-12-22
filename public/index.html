@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <title>My Application</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+<script src="./main.js"></script>
 
     <div class="container">
-        <h1>Hello There!</h1>
-        <p>To get started, edit <code>src/index.js</code>.</p>
+        <div class="loading-frame">
+        </div>
+        <header class="header">
+            <h1>Welcome</h1>
+<!--
+            <p>To get started, edit <code>src/index.js</code>.</p>
+-->
+        </header>
+        <main id="content">
+            <section id="movie-list">
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
     </div>
-
-    <script src="/main.js"></script>
 </body>
 </html>

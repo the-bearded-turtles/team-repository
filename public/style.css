@@ -5,7 +5,11 @@ html, body {
 
 .container {
     position: relative;
+    padding: .5em;
+    margin: .5em;
     top: 50%;
     transform: translateY(-100%);
     text-align: center;
+    color: ghostwhite;
+    background-color: darkslateblue;
 }
