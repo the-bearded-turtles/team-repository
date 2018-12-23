@@ -3,23 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <title>My Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900i|Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 <script src="./main.js"></script>
     <div class="container">
         <div id="loading-screen">
-            <!-- WILL HAVE TOP-LEVEL Z-INDEX DISPLAY ONLY DURING AJAX REQUEST -->
+            <h2> loading... </h2>
+            <!-- WILL HAVE TOP-LEVEL Z-INDEX DISPLAY ONLY DURING AJAX REQUEST LOAD-->
         </div>
         <header class="header">
-            <h1>Flick-Fave</h1>
+            <h1>Flick-N-Fave</h1>
             <h3>Review ALL of your favorite films. </h3>
             <p>
                 <!-- To get started, edit <code>src/index.js</code>. -->
-                We'll make it easy for you to arrange and organize your Flick-Fave profile.
+                Visualize your entertainment preferences.
             </p>
         </header>
         <main id="content">
+            <nav id="new-entry-container">
+                <h3>New Entry</h3>
+                <form>
+                    <span>Title: </span>
+                    <input type="text" name="title" placeholder=" Enter a Movie Name">
+                </form>
+                <br>
+                    <form>
+                        <span>Genre: </span>
+                        <select id="genre">
+                            <option class="genre-select-style" value="default">-- Select --</option>
+                            <option class="genre-select-style" value="action">Action</option>
+                            <option class="genre-select-style" value="comedy">Comedy</option>
+                            <option class="genre-select-style" value="drama">Drama</option>
+                            <option class="genre-select-style" value="horror">Horror</option>
+                            <option class="genre-select-style" value="horror">Romance</option>
+                            <option class="genre-select-style" value="sci-fi">Sci-Fi</option>
+                        </select>
+                    </form>
+                <br>
+                <form>
+                        Rating:
+                        <input id="star-1" type="radio" name="star-icon">
+                        <input id="star-2" type="radio" name="star-icon">
+                        <input id="star-3" type="radio" name="star-icon">
+                        <input id="star-4" type="radio" name="star-icon">
+                        <input id="star-5" type="radio" name="star-icon">
+                </form>
+                <button>Submit</button>
+
+            </nav>
+
+            <hr>
+
             <section id="movie-list">
             </section>
         </main>

@@ -5,47 +5,71 @@ html, body {
 #loading-screen {
     width: 100%;
     height: 100%;
-    background-color: midnightblue;
-    z-index: 2;
+    background: midnightblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
 }
 .container {
     position: relative;
     margin: auto;
     padding: .5em;
     text-align: center;
-    color: ghostwhite;
-    background-color: darkslateblue;
+    color: lightyellow;
+    background-color: black;
+}
+#new-entry-container {
+    background-color: ghostwhite;
+    padding: .5em;
+    color: darkslategray;
+}
+#new-entry-container, input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5em;
+    margin: .5em;
 }
 header {
-    color: white;
+    color: palegoldenrod;
 }
 #content {
-    background-color: powderblue;
+    background-color: maroon;
     border: 3px solid lightsteelblue;
     border-radius: 10px;
     padding: .5em;
     margin: auto;
     max-width: 470px;
 }
+#genre {
+    color: slategray;
+    background: white;
+}
 #movie-list {
     padding: .5em;
     margin: auto;
     width: 460px;
-
-
 }
 .movieBox {
-    background-color: aliceblue;
+    background-color: lightgoldenrodyellow;
     border-radius: 10px;
-    border: 1px solid darkblue;
+    border: 1px solid lightpink;
     color: darkslategray;
     padding: .5em;
     margin: auto;
-    box-shadow: 3px 3px 5px 1px slateblue;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    box-shadow: 3px 3px 3px 1px lightsalmon;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.movieBox, h2 {
+    font-family: 'Roboto', sans-serif;;
+}
+p, .movieBox {
+    font-family: 'Special Elite', cursive;
+;
 }
 .movieBox, button {
-    padding: .5em;
-    margin: 2em;
+    padding: 1em;
+    margin: 1em;
     border-radius: 10px;
     outline: none;
 }
